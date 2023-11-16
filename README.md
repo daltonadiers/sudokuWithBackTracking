@@ -1,5 +1,5 @@
 # Sudoku resolvido com BackTracking
-  Esse projeto visa resolver qualquer sudoku contido em uma matriz 9x9, utilizando da técnica de BackTrackin. Esta técnica consiste em voltar atrás sempre que não houverem mais soluções a partir do ponto em que se encontra, e tentar um caminho diferente.
+  Esse projeto visa resolver qualquer sudoku contido em uma matriz 9x9, utilizando da técnica de BackTracking. Esta técnica consiste em voltar atrás sempre que não houverem mais soluções a partir do ponto em que se encontra, e tentar um caminho diferente.
 
   ## Descrição
   O algoritmo utiliza de dois arquivos, sendo um deles `sudoku.cpp`, apenas para inicializar a classe `mySudo`, contida no arquivo `sudokusolve.cpp`. Utilizando de uma estrutura stack, cada vez que nos encontrarmos "sem saída", desfizemos o último passo, contido no topo da stack e tentamos novamente seguindo outro caminho. Temos algumas funções principais, responsáveis por verificar linhas, colunas e blocos, tal qual tradicionalmente no sudoku, afim de garantir que a solução esteja correta. Caso o algoritmo tente voltar atrás, e não haja nada contido na stack, significa que não há solução posível para o sudoku atual.
